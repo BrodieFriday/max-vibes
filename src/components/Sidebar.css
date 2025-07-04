@@ -1,0 +1,138 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #fff; /* Set background to white */
+    color: #333; /* Set default text color to dark */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    transition: left 0.3s ease;
+    z-index: 1001;
+    overflow-y: auto;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.sidebar-toggle {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 50px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    z-index: 1002;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    padding: 0;
+    transition: left 0.3s ease;
+}
+
+.sidebar-toggle.open {
+    left: 300px;
+}
+
+
+.sidebar-content {
+    padding: 20px;
+    color: #333; /* Set default text color to dark */
+}
+
+.sidebar-content h2 {
+    margin-top: 0;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.sidebar-content h3 {
+    color: #333; /* Ensure headers are dark */
+}
+
+.control-group {
+    margin-bottom: 20px;
+}
+
+.control-group h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.control-group input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.control-group button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.control-group button:hover {
+    background-color: #0056b3;
+}
+
+
+.collapsible-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.collapsible-header .arrow {
+    transition: transform 0.3s ease;
+}
+
+.collapsible-header .arrow.open {
+    transform: rotate(180deg);
+}
+
+.recent-searches-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    max-height: 200px; /* Adjust as needed */
+    transition: max-height 0.3s ease-in-out;
+}
+
+.recent-searches-list li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee; /* Lighter border */
+    color: #333; /* Set text color to dark */
+    transition: background-color 0.2s;
+}
+
+.recent-searches-list li:last-child {
+    border-bottom: none;
+}
+
+.recent-searches-list li:hover {
+    background-color: #f0f0f0; /* Light grey hover */
+    color: #000;
+}

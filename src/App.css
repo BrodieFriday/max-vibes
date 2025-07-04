@@ -1,0 +1,86 @@
+#body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.App {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.leaflet-container {
+    height: 100%;
+    width: 100%;
+}
+
+/* Styles for the routing machine instructions */
+.leaflet-routing-container {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.leaflet-routing-alt h2, .leaflet-routing-alt h3 {
+    color: #333;
+}
+
+.leaflet-routing-alt table {
+    width: 100%;
+}
+
+.leaflet-routing-alt table td {
+    color: #555;
+}
+
+/* Custom styles for the Layers Control */
+.leaflet-control-layers {
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+    background: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+
+.leaflet-control-layers-base label {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    cursor: pointer;
+    padding: 5px;
+}
+
+.leaflet-control-layers-base label span {
+    font-size: 14px;
+    margin-left: 8px; /* Space between image and text */
+    color: #333; /* Set text color to dark grey */
+}
+
+.leaflet-control-layers-selector {
+    margin-top: 2px;
+}
+
+.layer-icon {
+    width: 45px;
+    height: 45px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.leaflet-control-layers-selector:checked + span .layer-icon {
+    border-color: #007bff;
+}
+
+@media (max-width: 600px) {
+    .leaflet-routing-container {
+        width: 90%;
+        left: 5%;
+        bottom: 10px;
+        top: auto;
+    }
+}
