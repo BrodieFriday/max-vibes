@@ -1,4 +1,4 @@
-# Interactive Map Application (React Version)
+# Windsurf AI Interactive Map Application (React Version)
 
 This is an interactive map application built with **React** and **Vite**, using the **React-Leaflet** library for mapping and the **OpenStreetMap Nominatim API** for geocoding.
 
